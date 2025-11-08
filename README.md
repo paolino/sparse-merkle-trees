@@ -4,8 +4,8 @@
 [![Hackage](https://img.shields.io/hackage/v/sparse-merkle-trees)](https://hackage.haskell.org/package/sparse-merkle-trees)
 [![BSD3](https://img.shields.io/github/license/tochicool/sparse-merkle-trees)](https://github.com/tochicool/sparse-merkle-trees/blob/master/LICENSE)
 
-A Haskell library implementing sparse Merkle trees, an authenticated data 
-structure with support for zero-knowledge proofs of *inclusion and exclusion*, 
+A Haskell library implementing sparse Merkle trees, an authenticated data
+structure with support for zero-knowledge proofs of *inclusion and exclusion*,
 parametrised over cryptographic hash algorithms at the type level.
 
 
@@ -13,18 +13,18 @@ parametrised over cryptographic hash algorithms at the type level.
 
 ## Introduction
 
-A [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) is an authenticated 
-data structure which supports efficient zero-knowledge proofs of element 
+A [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) is an authenticated
+data structure which supports efficient zero-knowledge proofs of element
 inclusion from a Merkle root.
 
-A sparse Merkle tree (SMT) is Merkle Tree where all possible keys (digests) are 
-at the leaves of the tree. This gives us the additional properties over a Merkle 
+A sparse Merkle tree (SMT) is Merkle Tree where all possible keys (digests) are
+at the leaves of the tree. This gives us the additional properties over a Merkle
 tree:
 
 * support for proofs of *exclusion* of elements from a Merkle root
 * *history independence* of the merkle root from element insertion order
 
-A naive construction would mean that a N-bit key would yield a SMT of size 
+A naive construction would mean that a N-bit key would yield a SMT of size
 2^N. However, because the tree is *sparse*, there are efficient constructions
 that grow in size O(n) where n is the size of the tree.
 
@@ -41,9 +41,9 @@ SMTs expand on the existing use cases of Merkle trees including:
 
 ### Compact Sparse Merkle Trees
 
-The compact sparse Merkle tree is based on the description given in this 
-[report](https://eprint.iacr.org/2018/955.pdf) by 
-[Faraz Haider](https://github.com/farazhaider). The module exposes an similar 
+The compact sparse Merkle tree is based on the description given in this
+[report](https://eprint.iacr.org/2018/955.pdf) by
+[Faraz Haider](https://github.com/farazhaider). The module exposes an similar
 API to [`Data.Set`](https://hackage.haskell.org/package/containers-0.6.5.1/docs/Data-Set.html) but this is subject to change.
 
 ```haskell
@@ -126,5 +126,5 @@ See the more complete haddock documentation on [Hackage](https://hackage.haskell
 
 ## Related libraries
 
-* [cryptonite](https://hackage.haskell.org/package/cryptonite) for cryptographic primitives
+* [crypton](https://hackage.haskell.org/package/crypton) for cryptographic primitives
 * [merkle-tree](https://hackage.haskell.org/package/merkle-tree) for an implementation of a merkle tree

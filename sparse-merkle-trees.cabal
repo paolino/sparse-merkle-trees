@@ -38,7 +38,7 @@ library
       base >=4.7 && <5
     , bytestring >=0.10 && <0.12
     , containers ==0.6.*
-    , cryptonite >=0.25 && <0.31
+    , crypton
     , memory >=0.14 && <0.19
   default-language: Haskell2010
 
@@ -54,7 +54,7 @@ test-suite sparse-merkle-trees-test
       base >=4.7 && <5
     , bytestring >=0.10 && <0.12
     , containers ==0.6.*
-    , cryptonite >=0.25 && <0.31
+    , crypton
     , memory >=0.14 && <0.19
     , smallcheck
     , sparse-merkle-trees
@@ -78,7 +78,7 @@ benchmark sparse-merkle-trees-bench
     , bytestring >=0.10 && <0.12
     , containers ==0.6.*
     , criterion
-    , cryptonite >=0.25 && <0.31
+    , crypton
     , deepseq
     , memory >=0.14 && <0.19
     , sparse-merkle-trees
