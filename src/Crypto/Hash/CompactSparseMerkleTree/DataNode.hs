@@ -1,4 +1,6 @@
+{-# LANGUAGE StrictData #-}
 module Crypto.Hash.CompactSparseMerkleTree.DataNode where
+
 import Crypto.Hash (Digest)
 
 data DataNode alg a

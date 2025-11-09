@@ -8,7 +8,7 @@
 {-# LANGUAGE RankNTypes #-}
 {-# LANGUAGE StandaloneDeriving #-}
 {-# LANGUAGE TypeFamilies #-}
-{-# LANGUAGE TypeSynonymInstances #-}
+{-# LANGUAGE TypeSynonymInstances, StrictData #-}
 
 -- |
 -- Module      : Crypto.Hash.CompactSparseMerkleTree
